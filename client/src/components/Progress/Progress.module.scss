@@ -1,0 +1,40 @@
+.progress {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  bottom: 10px;
+  border-radius: .25rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 1rem;
+  width: 50vw;
+
+  p {
+    margin: 0 0 1rem 0;
+    color: #444;
+    font-size: .9rem;
+
+    &:first-of-type {
+      width: 50%;
+      text-align: left;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &:last-of-type {
+      width: 50%;
+      text-align: right;
+    }
+  }
+}
+
+.progressBar {
+  width: 100%;
+  background: #eee;
+  >div {
+    background: #0071E3;
+    height: 5px;
+  }
+}
